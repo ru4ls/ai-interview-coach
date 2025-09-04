@@ -1,6 +1,5 @@
 # AI Interview Coach
 
-<!-- ![AI Interview Coach Screenshot](https://raw.githubusercontent.com/ruals/testing-repo/main/preview.png) -->
 <div align="center">
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -8,7 +7,6 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
@@ -76,7 +74,7 @@ This **AI Interview Coach** directly addresses these problems by providing a fre
 - **Containerization:** Docker & Docker Compose
 - **Deployment Target:** Google Cloud Run
 
-## ⚙️ Local Setup & Installation
+## Local Setup & Installation
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or later)
@@ -159,10 +157,6 @@ The Text-to-Speech and Speech-to-Text libraries use a service account file for a
     -   Open your browser and navigate to `http://localhost:3000`.
     -   The backend server will be running on `http://localhost:8080`.
 
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request.
-
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
