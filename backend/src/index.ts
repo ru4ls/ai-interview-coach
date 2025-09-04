@@ -21,7 +21,7 @@ app.use(cors());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
-// -- SAFETY CONFIGURATION ---
+// -- SAFETY CONFIGURATION --
 const safetySettings = [
   {
     category: HarmCategory.HARM_CATEGORY_HARASSMENT,
