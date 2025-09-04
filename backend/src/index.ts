@@ -2,7 +2,7 @@
 
 import express from 'express';
 import cors from 'cors';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import { TextToSpeechClient } from '@google-cloud/text-to-speech';
 import { SpeechClient } from '@google-cloud/speech';
 import dotenv from 'dotenv';
@@ -20,7 +20,28 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(cors());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+
+// -- SAFETY CONFIGURATION --
+const safetySettings = [
+  {
+    category: HarmCategory.HARM_CATEGORY_HARASSMENT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+];
+
+const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash', safetySettings: safetySettings });
 
 if (!process.env.GCP_CREDENTIALS_JSON) {
     throw new Error("GCP_CREDENTIALS_JSON environment variable not set.");
@@ -98,20 +119,22 @@ app.post('/api/interview/next-step', upload.single('cvFile'), async (req, res) =
         const noGreetingInstruction = `Do not add any greetings or introductory pleasantries. Just ask the question directly.`;
         const summaryContext = context.profileSummary ? `The candidate also provided this summary about themselves: """${context.profileSummary}"""` : '';
 
+        const professionalConductInstruction = `You must maintain a professional, respectful, and unbiased tone at all times. Do not ask questions that are discriminatory, overly personal, or inappropriate for a job interview.`;
+
         // --- GREETINGS --- 
         if (currentPhase === 'GREETING') {
             const greetingName = (context.userName && context.userName.toLowerCase() !== 'candidate' && context.userName.trim() !== '') ? `, ${context.userName}` : "";
-            prompt = `${langInstruction} You are an expert interviewer named Gemini. You are starting an interview for a ${context.role} position. Start with a professional greeting (e.g., "Good morning" or "Selamat pagi")${greetingName}. Then, ask the candidate to introduce themselves. ${summaryContext}`;
+            prompt = `${langInstruction} ${professionalConductInstruction} You are an expert interviewer named Gemini. You are starting an interview for a ${context.role} position. Start with a professional greeting (e.g., "Good morning" or "Selamat pagi")${greetingName}. Then, ask the candidate to introduce themselves. ${summaryContext}`;
             nextPhase = 'INTRODUCTION';
         } 
         // --- INTRODUCTION ---         
         else if (currentPhase === 'INTRODUCTION') {
-            prompt = `${langInstruction} The candidate, ${context.userName}, introduced themselves: "${context.userAnswer}". Based on this, their CV, their profile summary, and additional info, ${noGreetingInstruction} CV Text: """${context.cvText}""" Additional Info: """${context.additionalInfo}""" ${summaryContext}`;
+            prompt = `${langInstruction} ${professionalConductInstruction} The candidate, ${context.userName}, introduced themselves: "${context.userAnswer}". Based on this, their CV, their profile summary, and additional info, ${noGreetingInstruction} CV Text: """${context.cvText}""" Additional Info: """${context.additionalInfo}""" ${summaryContext}`;
             nextPhase = 'EXPERIENCE';
         } 
         // --- EXPERIENCE ---        
         else if (parseInt(context.expQuestionsAsked) < parseInt(context.numExpQuestions)) {
-            prompt = `${langInstruction} The candidate answered: "${context.userAnswer}". Based on their CV and experience, ${noGreetingInstruction} This is experience question ${parseInt(context.expQuestionsAsked) + 1} of ${context.numExpQuestions}. CV Text: """${context.cvText}"""`;
+            prompt = `${langInstruction} ${professionalConductInstruction} The candidate answered: "${context.userAnswer}". Based on their CV and experience, ${noGreetingInstruction} This is experience question ${parseInt(context.expQuestionsAsked) + 1} of ${context.numExpQuestions}. CV Text: """${context.cvText}"""`;
             if (parseInt(context.expQuestionsAsked) + 1 >= parseInt(context.numExpQuestions)) {
                 nextPhase = 'ROLE_SPECIFIC';
             } else {
@@ -127,7 +150,7 @@ app.post('/api/interview/next-step', upload.single('cvFile'), async (req, res) =
             } else {
                 questionContextPrompt = `Ask a common and relevant interview question for a **${context.role}** position.`;
             }        
-            prompt = `${langInstruction} ${transitionText} The candidate answered: "${context.userAnswer}". 
+            prompt = `${langInstruction} ${professionalConductInstruction} ${transitionText} The candidate answered: "${context.userAnswer}". 
             ${questionContextPrompt} 
             ${noGreetingInstruction} This is role-specific question ${parseInt(context.roleQuestionsAsked) + 1} of ${context.numRoleQuestions}.`;
             
@@ -140,7 +163,7 @@ app.post('/api/interview/next-step', upload.single('cvFile'), async (req, res) =
         // --- PERSONALITY ---
         else if (parseInt(context.personalityQuestionsAsked) < parseInt(context.numPersonalityQuestions)) {
             const transitionText = (parseInt(context.personalityQuestionsAsked) === 0) ? "Great. Finally, I'd like to ask a few questions to understand you better." : "";     
-            prompt = `${langInstruction} ${transitionText} The candidate answered: "${context.userAnswer}". Now, ask a new, DIFFERENT personality or behavioral question. DO NOT repeat a question that has already been asked in the chat history. Possible topics include (but are not limited to): - The candidate's greatest professional strength. - The candidate's biggest area for improvement or weakness. - How they handle pressure or tight deadlines. - A time they failed and what they learned. - Their ideal work environment. - How they stay motivated. Review the chat history below to ensure your question is unique. CHAT HISTORY: """${context.fullChatHistory}""" ${noGreetingInstruction} This is personality question ${parseInt(context.personalityQuestionsAsked) + 1} of ${context.numPersonalityQuestions}.`;
+            prompt = `${langInstruction} ${professionalConductInstruction} ${transitionText} The candidate answered: "${context.userAnswer}". Now, ask a new, DIFFERENT personality or behavioral question. DO NOT repeat a question that has already been asked in the chat history. Possible topics include (but are not limited to): - The candidate's greatest professional strength. - The candidate's biggest area for improvement or weakness. - How they handle pressure or tight deadlines. - A time they failed and what they learned. - Their ideal work environment. - How they stay motivated. Review the chat history below to ensure your question is unique. CHAT HISTORY: """${context.fullChatHistory}""" ${noGreetingInstruction} This is personality question ${parseInt(context.personalityQuestionsAsked) + 1} of ${context.numPersonalityQuestions}.`;
             if (parseInt(context.personalityQuestionsAsked) + 1 >= parseInt(context.numPersonalityQuestions)) {
                 nextPhase = 'CLOSING';
             } else {
@@ -149,7 +172,7 @@ app.post('/api/interview/next-step', upload.single('cvFile'), async (req, res) =
         } 
         // --- CLOSING ---
         else {
-            prompt = `${langInstruction} The candidate's last answer was: "${context.userAnswer}". The interview is now over. Thank ${context.userName} for their time and briefly explain the next steps.**Do not mention a specific number of days or a timeline like "[Number] business days". Keep it general.**`;
+            prompt = `${langInstruction} ${professionalConductInstruction} The candidate's last answer was: "${context.userAnswer}". The interview is now over. Thank ${context.userName} for their time and briefly explain the next steps.**Do not mention a specific number of days or a timeline like "[Number] business days". Keep it general.**`;
             nextPhase = 'FINISHED';
         }
         return { prompt, nextPhase };

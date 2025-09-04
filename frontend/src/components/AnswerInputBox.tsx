@@ -1,10 +1,11 @@
 // src/components/AnswerInputBox.tsx
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Paper, InputBase, IconButton } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import MicIcon from '@mui/icons-material/Mic';
 import StopIcon from '@mui/icons-material/Stop';
+import { toast } from 'react-hot-toast';
 
 interface SttResponse {
     results: {
@@ -32,6 +33,21 @@ const AnswerInputBox: React.FC<AnswerInputBoxProps> = ({ isLoading, isAudioPlayi
     const socketRef = useRef<WebSocket | null>(null);
     const mediaRecorderRef = useRef<MediaRecorder | null>(null);
     const audioStreamRef = useRef<MediaStream | null>(null);
+
+    const [badWordsList, setBadWordsList] = useState<string[]>([]);
+
+    useEffect(() => {
+        fetch('/badwords.json')
+            .then(res => res.json())
+            .then(data => {
+                const currentLangCode = languageMap[language] || 'en';
+                const listForLang = data[currentLangCode] || [];
+                const listForEnglish = data['en'] || [];
+                const combinedSet = new Set([...listForLang, ...listForEnglish]);
+                setBadWordsList(Array.from(combinedSet));
+            })
+            .catch(error => console.error("Failed to load bad words list:", error));
+    }, [language, languageMap]);
 
     const playSound = (soundFile: string) => {
         try {
@@ -142,6 +158,20 @@ const AnswerInputBox: React.FC<AnswerInputBoxProps> = ({ isLoading, isAudioPlayi
     
     const handleSubmit = () => {
         const finalAnswer = (userAnswer + interimTranscript).trim();
+
+        // --- FRONTEND GUARDRAIL ---
+        if (badWordsList.length > 0) {
+            const lowerCaseAnswer = finalAnswer.toLowerCase();
+            const hasBadWord = badWordsList.some(word => lowerCaseAnswer.includes(word));
+            
+            if (hasBadWord) {
+                toast.error("Inappropriate language detected. Please keep your answers professional.");
+                setUserAnswer('');
+                setInterimTranscript('');
+                return;
+            }
+        }
+
         if (!finalAnswer || isLoading || isAudioPlaying) return;
         onSubmit(finalAnswer);
         setUserAnswer('');
