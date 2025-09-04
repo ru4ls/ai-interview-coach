@@ -1,0 +1,13 @@
+// backend/tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2016",          // The version of JavaScript to compile to
+    "module": "commonjs",         // The module system to use
+    "outDir": "./dist",           // Where to put the compiled .js files
+    "rootDir": "./src",           // Where to find the source .ts files
+    "esModuleInterop": true,      // Allows for better interoperability between module types
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,               // Enables strict type-checking
+    "skipLibCheck": true          // Skip type checking of declaration files
+  }
+}

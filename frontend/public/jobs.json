@@ -1,0 +1,414 @@
+{
+  "industries": [
+    {
+      "name": "Aerospace & Defense",
+      "roles": [
+        "Aerospace Engineer",
+        "Avionics Technician",
+        "Aircraft Mechanic",
+        "Defense Contractor",
+        "Mechanical Engineer",
+        "Systems Engineer",
+        "Quality Assurance Inspector",
+        "Program Manager",
+        "Supply Chain Manager (Aerospace)",
+        "Stress Analyst",
+        "Flight Test Engineer",
+        "Satellite Engineer"
+      ]
+    },
+    {
+      "name": "Agriculture & Farming",
+      "roles": [
+        "Agricultural Scientist",
+        "Farm Manager",
+        "Agronomist",
+        "Horticulturist",
+        "Agricultural Engineer",
+        "Precision Agriculture Technician",
+        "Food Scientist",
+        "Livestock Manager",
+        "Drone Technologist (Agriculture)"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "roles": [
+        "AI Engineer",
+        "AI Ethics Specialist",
+        "AI Product Manager",
+        "AI Researcher",
+        "AI Trainer / Annotation Specialist",
+        "AI Chatbot Developer",
+        "Computer Vision Engineer",
+        "Data Scientist (AI Focus)",
+        "Machine Learning Engineer",
+        "Natural Language Processing (NLP) Specialist",
+        "Robotics Engineer"
+      ]
+    },
+    {
+      "name": "Automotive",
+      "roles": [
+        "Automotive Technician/Mechanic",
+        "Automotive Engineer",
+        "Sales Manager (Automotive)",
+        "Service Advisor",
+        "Industrial Designer (Automotive)",
+        "Autonomous Vehicle Engineer",
+        "Electric Vehicle (EV) Technician",
+        "Production Line Worker"
+      ]
+    },
+    {
+      "name": "Biotechnology & Pharmaceuticals",
+      "roles": [
+        "Biomedical Engineer",
+        "Biochemist",
+        "Clinical Research Associate",
+        "Laboratory Technician",
+        "Pharmaceutical Sales Representative",
+        "Process Development Scientist",
+        "Quality Control Analyst",
+        "Regulatory Affairs Specialist",
+        "Pharmacist",
+        "Bioinformatician"
+      ]
+    },
+    {
+      "name": "Education & Human Services",
+      "roles": [
+        "Academic Advisor",
+        "Career Counselor",
+        "Corporate Trainer",
+        "Curriculum Developer",
+        "Education Administrator",
+        "Instructional Designer",
+        "Librarian",
+        "Mathematics Specialist",
+        "Mental Health Specialist",
+        "School Principal",
+        "Special Education Teacher",
+        "Substance Abuse Counselor",
+        "Teacher / Professor",
+        "Tutor"
+      ]
+    },
+    {
+      "name": "Energy, Utilities & Mining",
+      "roles": [
+        "Chemical Engineer",
+        "Civil Engineer",
+        "Electrical Engineer",
+        "Energy Analyst",
+        "Geologist",
+        "Grid Integration Specialist",
+        "Green Hydrogen Engineer",
+        "Mining Engineer",
+        "Petroleum Engineer",
+        "Power Plant Operator",
+        "Renewable Energy Engineer",
+        "Solar Energy System Engineer",
+        "Sustainability Data Analyst",
+        "Wind Energy Project Manager"
+      ]
+    },
+    {
+      "name": "Finance & Accounting",
+      "roles": [
+        "Accountant",
+        "Actuary",
+        "Auditor",
+        "Bookkeeper",
+        "Chief Financial Officer (CFO)",
+        "Compliance Officer",
+        "Controller",
+        "Credit Analyst",
+        "Financial Advisor",
+        "Financial Analyst",
+        "Hedge Fund Manager",
+        "Insurance Underwriter",
+        "Investment Banker",
+        "Loan Officer",
+        "Management Analyst",
+        "Payroll Specialist",
+        "Private Equity Associate",
+        "Quantitative Analyst (Quant)",
+        "Risk Manager",
+        "Tax Specialist"
+      ]
+    },
+    {
+      "name": "Government & Public Sector",
+      "roles": [
+        "City Manager",
+        "Civil Servant",
+        "Diplomat",
+        "Emergency Management Director",
+        "Intelligence Analyst",
+        "Policy Advisor",
+        "Public Health Officer",
+        "Law Enforcement Officer",
+        "Urban Planner",
+        "Legislative Assistant"
+      ]
+    },
+    {
+      "name": "Healthcare & Medical",
+      "roles": [
+        "Anesthesiologist",
+        "Cardiologist",
+        "Chiropractor",
+        "Dental Hygienist",
+        "Dentist",
+        "Dietitian/Nutritionist",
+        "Emergency Medical Technician (EMT)",
+        "Epidemiologist",
+        "Genetic Counselor",
+        "Home Health Aide",
+        "Medical and Health Services Manager",
+        "Medical Assistant",
+        "Medical Biller and Coder",
+        "Mental Health Counselor",
+        "Nurse Practitioner",
+        "Occupational Therapy Assistant",
+        "Oncologist",
+        "Pharmacist",
+        "Pharmacy Technician",
+        "Physical Therapist",
+        "Physician",
+        "Physician Assistant",
+        "Radiologic Technologist",
+        "Registered Nurse",
+        "Respiratory Therapist",
+        "Speech-Language Pathologist",
+        "Surgical Technologist",
+        "Telehealth Nurse",
+        "Veterinarian"
+      ]
+    },
+    {
+      "name": "Hospitality & Tourism",
+      "roles": [
+        "Barista",
+        "Catering Manager",
+        "Chef / Head Cook",
+        "Concierge",
+        "Event Planner",
+        "Flight Attendant",
+        "Front Desk Agent",
+        "Hotel Manager",
+        "Housekeeping Manager",
+        "Restaurant Manager",
+        "Sommelier",
+        "Tour Guide",
+        "Travel Agent"
+      ]
+    },
+    {
+      "name": "Human Resources",
+      "roles": [
+        "Change Management Specialist",
+        "Chief People Officer",
+        "Compensation and Benefits Manager",
+        "Diversity and Inclusion Manager",
+        "Employee Relations Specialist",
+        "HR Business Partner",
+        "HR Coordinator",
+        "HR Generalist",
+        "HR Manager",
+        "HRIS Analyst",
+        "Organizational Development Specialist",
+        "Talent Acquisition Specialist/Recruiter",
+        "Training and Development Manager"
+      ]
+    },
+    {
+      "name": "Legal",
+      "roles": [
+        "Arbitrator/Mediator",
+        "Compliance Director",
+        "Contract Manager",
+        "Corporate Counsel",
+        "Court Reporter",
+        "In-house Counsel",
+        "Judge",
+        "Lawyer/Attorney (Corporate, IP, Real Estate)",
+        "Legal Operations Manager",
+        "Legal Secretary",
+        "Paralegal"
+      ]
+    },
+    {
+      "name": "Marketing, Advertising & Creative",
+      "roles": [
+        "AI Marketing Specialist",
+        "Art Director",
+        "Brand Manager",
+        "Content Creator/Manager",
+        "Copywriter",
+        "Customer Experience (CX) Strategist",
+        "Digital Marketing Specialist",
+        "Event Marketing Manager",
+        "Graphic Designer",
+        "Market Research Analyst",
+        "Marketing Manager",
+        "Media Buyer",
+        "Product Marketing Manager",
+        "Public Relations (PR) Specialist",
+        "SEO/SEM Specialist",
+        "Social Media Manager",
+        "UX/UI Designer",
+        "Videographer"
+      ]
+    },
+    {
+      "name": "Media & Entertainment",
+      "roles": [
+        "Actor",
+        "Animator",
+        "Audio Engineer",
+        "Broadcast Journalist",
+        "Casting Director",
+        "Director",
+        "Editor (Book, Film, Video)",
+        "Journalist/Reporter",
+        "Music Producer",
+        "Photographer",
+        "Production Assistant",
+        "Screenwriter",
+        "Social Media Influencer",
+        "Talent Agent"
+      ]
+    },
+    {
+      "name": "Non-Profit & Social Services",
+      "roles": [
+        "Case Manager",
+        "Community Outreach Coordinator",
+        "Development Director",
+        "Fundraiser",
+        "Grant Writer",
+        "Non-Profit Program Manager",
+        "Social Worker",
+        "Volunteer Coordinator"
+      ]
+    },
+    {
+      "name": "Real Estate & Construction",
+      "roles": [
+        "Architect",
+        "Carpenter",
+        "Civil Engineer",
+        "Construction Manager",
+        "Cost Estimator",
+        "Electrician",
+        "HVAC Technician",
+        "Industrial Machinery Mechanic",
+        "Plumber",
+        "Property Manager",
+        "Real Estate Agent/Broker",
+        "Real Estate Appraiser",
+        "Real Estate Developer",
+        "Solar Photovoltaic Installer",
+        "Surveyor",
+        "Welder",
+        "Wind Turbine Technician"
+      ]
+    },
+    {
+      "name": "Retail & E-commerce",
+      "roles": [
+        "Buyer/Purchasing Agent",
+        "Cashier",
+        "Customer Service Representative",
+        "E-commerce Manager",
+        "Inventory Manager",
+        "Merchandiser",
+        "Retail Sales Associate",
+        "Store Manager",
+        "Supply Chain Analyst (Retail)",
+        "Visual Merchandiser",
+        "Warehouse Associate"
+      ]
+    },
+    {
+      "name": "Sales & Business Development",
+      "roles": [
+        "Account Executive",
+        "Account Manager",
+        "Business Development Manager",
+        "Business Operations Specialist",
+        "Channel Partner Manager",
+        "Customer Success Manager",
+        "Sales Development Representative (SDR)",
+        "Sales Engineer",
+        "Sales Manager",
+        "Sales Operations Analyst",
+        "Salesperson/Sales Representative"
+      ]
+    },
+    {
+      "name": "Technology & Information Technology",
+      "roles": [
+        "AI/Machine Learning Engineer",
+        "AI Ethics Officer",
+        "AR/VR Developer",
+        "Blockchain Developer",
+        "Business Analyst",
+        "Cloud Architect/Engineer",
+        "Cybersecurity Analyst",
+        "Data Analyst",
+        "Data Engineer",
+        "Data Scientist",
+        "Database Administrator",
+        "DevOps Engineer",
+        "Front-End Developer",
+        "Back-End Developer",
+        "Full-Stack Developer",
+        "Hardware Engineer",
+        "IT Project Manager",
+        "IT Support Specialist",
+        "Mobile App Developer",
+        "Network Architect",
+        "Product Manager (Tech)",
+        "QA Engineer/Tester",
+        "Quantum Computing Scientist",
+        "Scrum Master",
+        "Software Developer/Engineer",
+        "Solutions Architect",
+        "Systems Administrator",
+        "UX/UI Designer"
+      ]
+    },
+    {
+      "name": "Telecommunications",
+      "roles": [
+        "Broadband Technician",
+        "Cell Tower Technician",
+        "Network Engineer (Telecom)",
+        "Telecommunications Specialist",
+        "Fiber Optic Technician",
+        "VoIP Engineer",
+        "RF (Radio Frequency) Engineer"
+      ]
+    },
+    {
+      "name": "Transportation & Logistics",
+      "roles": [
+        "Airline Pilot",
+        "Air Traffic Controller",
+        "Delivery Driver",
+        "Dispatcher",
+        "Fleet Manager",
+        "Freight Forwarder",
+        "Heavy and Tractor-Trailer Truck Driver",
+        "Logistics Analyst",
+        "Logistics Manager",
+        "Public Transit Operator",
+        "Supply Chain Manager",
+        "Warehouse Manager"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "Afrikaans": {
+    "lang_code": "af-ZA",
+    "voices": {
+      "Female - Lena (WaveNet)": "af-ZA-Wavenet-A"
+    }
+  },
+  "Amharic": {
+    "lang_code": "am-ET",
+    "voices": {
+      "Female - Abeba (WaveNet)": "am-ET-Wavenet-A",
+      "Male - Dawit (WaveNet)": "am-ET-Wavenet-B"
+    }
+  },
+  "Arabic": {
+    "lang_code": "ar-XA",
+    "voices": {
+      "Female - Aoede (Chirp HD)": "ar-XA-Chirp3-HD-Aoede",
+      "Male - Puck (Chirp HD)": "ar-XA-Chirp3-HD-Puck"
+    }
+  },
+  "Basque": {
+    "lang_code": "eu-ES",
+    "voices": {
+      "Female - Ane (WaveNet)": "eu-ES-Wavenet-A"
+    }
+  },
+  "Bengali (India)": {
+    "lang_code": "bn-IN",
+    "voices": {
+      "Female - Anika (WaveNet)": "bn-IN-Wavenet-A",
+      "Male - Dev (WaveNet)": "bn-IN-Wavenet-B"
+    }
+  },
+  "Catalan": {
+    "lang_code": "ca-ES",
+    "voices": {
+      "Female - Laia (WaveNet)": "ca-ES-Wavenet-A"
+    }
+  },
+  "Chinese (Cantonese)": {
+    "lang_code": "yue-HK",
+    "voices": {
+      "Female - Wing (WaveNet)": "yue-HK-Wavenet-A",
+      "Male - Lik (WaveNet)": "yue-HK-Wavenet-B"
+    }
+  },
+  "Chinese (Mandarin)": {
+    "lang_code": "cmn-CN",
+    "voices": {
+      "Female - Leda (Chirp HD)": "cmn-CN-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "cmn-CN-Chirp3-HD-Orus"
+    }
+  },
+  "Chinese (Taiwanese Mandarin)": {
+    "lang_code": "cmn-TW",
+    "voices": {
+      "Female - Hsiao-Mei (WaveNet)": "cmn-TW-Wavenet-A",
+      "Male - Chih-Hao (WaveNet)": "cmn-TW-Wavenet-B"
+    }
+  },
+  "Croatian": {
+    "lang_code": "hr-HR",
+    "voices": {
+      "Female - Ana (WaveNet)": "hr-HR-Wavenet-A"
+    }
+  },
+  "Czech": {
+    "lang_code": "cs-CZ",
+    "voices": {
+      "Female - Zuzana (WaveNet)": "cs-CZ-Wavenet-A"
+    }
+  },
+  "Danish": {
+    "lang_code": "da-DK",
+    "voices": {
+      "Female - Ida (Chirp)": "da-DK-Chirp-A"
+    }
+  },
+  "Dutch (Belgium)": {
+    "lang_code": "nl-BE",
+    "voices": {
+      "Female - Eva (WaveNet)": "nl-BE-Wavenet-A",
+      "Male - Daan (WaveNet)": "nl-BE-Wavenet-B"
+    }
+  },
+  "Dutch (Netherlands)": {
+    "lang_code": "nl-NL",
+    "voices": {
+      "Female - Leda (Chirp HD)": "nl-NL-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "nl-NL-Chirp3-HD-Orus"
+    }
+  },
+  "English (Australia)": {
+    "lang_code": "en-AU",
+    "voices": {
+      "Female - Kore (Chirp HD)": "en-AU-Chirp3-HD-Kore",
+      "Male - Fenrir (Chirp HD)": "en-AU-Chirp3-HD-Fenrir"
+    }
+  },
+  "English (India)": {
+    "lang_code": "en-IN",
+    "voices": {
+      "Female - Aditi (WaveNet)": "en-IN-Wavenet-A",
+      "Male - Rohan (WaveNet)": "en-IN-Wavenet-B",
+      "Female - Ananya (WaveNet)": "en-IN-Wavenet-D",
+      "Male - Arjun (WaveNet)": "en-IN-Wavenet-C"
+    }
+  },
+  "English (UK)": {
+    "lang_code": "en-GB",
+    "voices": {
+      "Female - Aoede (Chirp HD)": "en-GB-Chirp3-HD-Aoede",
+      "Male - Puck (Chirp HD)": "en-GB-Chirp3-HD-Puck"
+    }
+  },
+  "English (US)": {
+    "lang_code": "en-US",
+    "voices": {
+      "Female - Aoede (Chirp HD)": "en-US-Chirp3-HD-Aoede",
+      "Male - Puck (Chirp HD)": "en-US-Chirp3-HD-Puck"
+    }
+  },
+  "Estonian": {
+    "lang_code": "et-EE",
+    "voices": {
+      "Female - Külli (WaveNet)": "et-EE-Wavenet-A"
+    }
+  },
+  "Filipino": {
+    "lang_code": "fil-PH",
+    "voices": {
+      "Female - Maria (WaveNet)": "fil-PH-Wavenet-A",
+      "Male - Jose (WaveNet)": "fil-PH-Wavenet-B",
+      "Female - Clara (WaveNet)": "fil-PH-Wavenet-C",
+      "Male - Andres (WaveNet)": "fil-PH-Wavenet-D"
+    }
+  },
+  "Finnish": {
+    "lang_code": "fi-FI",
+    "voices": {
+      "Female - Aino (WaveNet)": "fi-FI-Wavenet-A"
+    }
+  },
+  "French (Canada)": {
+    "lang_code": "fr-CA",
+    "voices": {
+      "Female - Leda (Chirp HD)": "fr-CA-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "fr-CA-Chirp3-HD-Orus"
+    }
+  },
+  "French (France)": {
+    "lang_code": "fr-FR",
+    "voices": {
+      "Female - Leda (Chirp HD)": "fr-FR-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "fr-FR-Chirp3-HD-Orus"
+    }
+  },
+  "Galician": {
+    "lang_code": "gl-ES",
+    "voices": {
+      "Female - Sabela (WaveNet)": "gl-ES-Wavenet-A"
+    }
+  },
+  "German": {
+    "lang_code": "de-DE",
+    "voices": {
+      "Female - Leda (Chirp HD)": "de-DE-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "de-DE-Chirp3-HD-Orus"
+    }
+  },
+  "Greek": {
+    "lang_code": "el-GR",
+    "voices": {
+      "Female - Sofia (WaveNet)": "el-GR-Wavenet-A"
+    }
+  },
+  "Gujarati (India)": {
+    "lang_code": "gu-IN",
+    "voices": {
+      "Female - Ishani (WaveNet)": "gu-IN-Wavenet-A",
+      "Male - Aarav (WaveNet)": "gu-IN-Wavenet-B"
+    }
+  },
+  "Hebrew": {
+    "lang_code": "he-IL",
+    "voices": {
+      "Female - Noa (WaveNet)": "he-IL-Wavenet-A",
+      "Male - Itai (WaveNet)": "he-IL-Wavenet-B"
+    }
+  },
+  "Hindi (India)": {
+    "lang_code": "hi-IN",
+    "voices": {
+      "Female - Aoede (Chirp HD)": "hi-IN-Chirp3-HD-Aoede",
+      "Male - Puck (Chirp HD)": "hi-IN-Chirp3-HD-Puck"
+    }
+  },
+  "Hungarian": {
+    "lang_code": "hu-HU",
+    "voices": {
+      "Female - Hanna (WaveNet)": "hu-HU-Wavenet-A"
+    }
+  },
+  "Indonesian": {
+    "lang_code": "id-ID",
+    "voices": {
+      "Female - Leda (Chirp HD)": "id-ID-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "id-ID-Chirp3-HD-Orus"
+    }
+  },
+  "Italian": {
+    "lang_code": "it-IT",
+    "voices": {
+      "Female - Leda (Chirp HD)": "it-IT-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "it-IT-Chirp3-HD-Orus"
+    }
+  },
+  "Japanese": {
+    "lang_code": "ja-JP",
+    "voices": {
+      "Female - Leda (Chirp HD)": "ja-JP-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "ja-JP-Chirp3-HD-Orus"
+    }
+  },
+  "Kannada (India)": {
+    "lang_code": "kn-IN",
+    "voices": {
+      "Female - Anvi (WaveNet)": "kn-IN-Wavenet-A",
+      "Male - Vihaan (WaveNet)": "kn-IN-Wavenet-B"
+    }
+  },
+  "Korean": {
+    "lang_code": "ko-KR",
+    "voices": {
+      "Female - Leda (Chirp HD)": "ko-KR-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "ko-KR-Chirp3-HD-Orus"
+    }
+  },
+  "Malay": {
+    "lang_code": "ms-MY",
+    "voices": {
+      "Female - Alya (WaveNet)": "ms-MY-Wavenet-A",
+      "Male - Adam (WaveNet)": "ms-MY-Wavenet-B"
+    }
+  },
+  "Malayalam (India)": {
+    "lang_code": "ml-IN",
+    "voices": {
+      "Female - Diya (WaveNet)": "ml-IN-Wavenet-A",
+      "Male - Aarav (WaveNet)": "ml-IN-Wavenet-B"
+    }
+  },
+  "Marathi (India)": {
+    "lang_code": "mr-IN",
+    "voices": {
+      "Female - Aarohi (WaveNet)": "mr-IN-Wavenet-A",
+      "Male - Aarav (WaveNet)": "mr-IN-Wavenet-B"
+    }
+  },
+  "Norwegian (Bokmål)": {
+    "lang_code": "nb-NO",
+    "voices": {
+      "Female - Thea (WaveNet)": "nb-NO-Wavenet-A",
+      "Male - Aksel (WaveNet)": "nb-NO-Wavenet-B"
+    }
+  },
+  "Polish": {
+    "lang_code": "pl-PL",
+    "voices": {
+      "Female - Leda (Chirp HD)": "pl-PL-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "pl-PL-Chirp3-HD-Orus"
+    }
+  },
+  "Portuguese (Brazil)": {
+    "lang_code": "pt-BR",
+    "voices": {
+      "Female - Aoede (Chirp HD)": "pt-BR-Chirp3-HD-Aoede",
+      "Male - Puck (Chirp HD)": "pt-BR-Chirp3-HD-Puck",
+      "Male - Achernar (Chirp HD)": "pt-BR-Chirp3-HD-Achernar"
+    }
+  },
+  "Portuguese (Portugal)": {
+    "lang_code": "pt-PT",
+    "voices": {
+      "Female - Sofia (WaveNet)": "pt-PT-Wavenet-A",
+      "Male - Diogo (WaveNet)": "pt-PT-Wavenet-B",
+      "Female - Beatriz (WaveNet)": "pt-PT-Wavenet-C",
+      "Male - Santiago (WaveNet)": "pt-PT-Wavenet-D"
+    }
+  },
+  "Punjabi (India)": {
+    "lang_code": "pa-IN",
+    "voices": {
+      "Female - Noor (WaveNet)": "pa-IN-Wavenet-A",
+      "Male - Arjun (WaveNet)": "pa-IN-Wavenet-B"
+    }
+  },
+  "Romanian": {
+    "lang_code": "ro-RO",
+    "voices": {
+      "Female - Ioana (WaveNet)": "ro-RO-Wavenet-A"
+    }
+  },
+  "Russian": {
+    "lang_code": "ru-RU",
+    "voices": {
+      "Female - Leda (Chirp HD)": "ru-RU-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "ru-RU-Chirp3-HD-Orus"
+    }
+  },
+  "Serbian": {
+    "lang_code": "sr-RS",
+    "voices": {
+      "Female - Dunja (WaveNet)": "sr-RS-Wavenet-A"
+    }
+  },
+  "Slovak": {
+    "lang_code": "sk-SK",
+    "voices": {
+      "Female - Ema (WaveNet)": "sk-SK-Wavenet-A"
+    }
+  },
+  "Spanish (Spain)": {
+    "lang_code": "es-ES",
+    "voices": {
+      "Female - Leda (Chirp HD)": "es-ES-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "es-ES-Chirp3-HD-Orus"
+    }
+  },
+  "Spanish (US)": {
+    "lang_code": "es-US",
+    "voices": {
+      "Female - Cala (Chirp HD)": "es-US-Chirp3-HD-Cala",
+      "Male - Mateo (Chirp HD)": "es-US-Chirp3-HD-Mateo"
+    }
+  },
+  "Swedish": {
+    "lang_code": "sv-SE",
+    "voices": {
+      "Female - Anna (WaveNet)": "sv-SE-Wavenet-A"
+    }
+  },
+  "Tamil (India)": {
+    "lang_code": "ta-IN",
+    "voices": {
+      "Female - Meena (WaveNet)": "ta-IN-Wavenet-A",
+      "Male - Aarav (WaveNet)": "ta-IN-Wavenet-B"
+    }
+  },
+  "Telugu (India)": {
+    "lang_code": "te-IN",
+    "voices": {
+      "Female - Ananya (WaveNet)": "te-IN-Wavenet-A"
+    }
+  },
+  "Thai": {
+    "lang_code": "th-TH",
+    "voices": {
+      "Female - Leda (Chirp HD)": "th-TH-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "th-TH-Chirp3-HD-Orus"
+    }
+  },
+  "Turkish": {
+    "lang_code": "tr-TR",
+    "voices": {
+      "Female - Leda (Chirp HD)": "tr-TR-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "tr-TR-Chirp3-HD-Orus"
+    }
+  },
+  "Ukrainian": {
+    "lang_code": "uk-UA",
+    "voices": {
+      "Female - Olena (WaveNet)": "uk-UA-Wavenet-A"
+    }
+  },
+  "Urdu (Pakistan)": {
+    "lang_code": "ur-PK",
+    "voices": {
+      "Female - Zara (WaveNet)": "ur-PK-Wavenet-A",
+      "Male - Ali (WaveNet)": "ur-PK-Wavenet-B"
+    }
+  },
+  "Vietnamese": {
+    "lang_code": "vi-VN",
+    "voices": {
+      "Female - Leda (Chirp HD)": "vi-VN-Chirp3-HD-Leda",
+      "Male - Orus (Chirp HD)": "vi-VN-Chirp3-HD-Orus"
+    }
+  }
+}
