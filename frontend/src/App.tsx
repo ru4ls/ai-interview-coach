@@ -325,7 +325,7 @@ function App() {
       </Box>
 
       <Box component="footer" sx={{ py: 1.5, px: 2, textAlign: 'center', borderTop: '1px solid', borderColor: 'divider', flexShrink: 0 }}>
-        <Typography variant="caption" color="text.secondary">Copyright © ruals 2025</Typography>
+        <Typography variant="caption" color="text.secondary">Copyright © Ruals Syarif 2025</Typography>
       </Box>
     </Box>
   );
