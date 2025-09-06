@@ -15,12 +15,10 @@
 This project is built with a modern architecture using React/TypeScript on the frontend and Node.js/Express on the backend, containerized with Docker, and designed for deployment on the Google Cloud Platform.
 
 <br/>
-
-<!--p align="center">
-  <a href="https://www.youtube.com/watch?v=vxyFBMsRFiQ" target="_blank">
-    <img src="https://img.youtube.com/vi/vxyFBMsRFiQ/maxresdefault.jpg" alt="Watch the Video Demo of the AI Interview Coach" width="90%">
-  </a>
-</p-->
+<p align="center">
+  <img src="assets/preview.jfif" alt="AI Interview Coach Main application interface" >
+</p>
+<br/>
 
 ## The Problem This Solves
 
@@ -159,6 +157,6 @@ The Text-to-Speech and Speech-to-Text libraries use a service account file for a
 
 ## License
 
-Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. You can find the full license text in the `LICENSE` file.
+Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. You can find the full license text in the [LICENSE](LICENSE) file.
 
 [![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
